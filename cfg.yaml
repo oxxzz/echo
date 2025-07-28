@@ -1,0 +1,15 @@
+debug: true
+version: 1.0.0
+
+log:
+  path: storage/logs/ox.logs
+  access:
+    enabled: true
+    path: storage/logs/access.log
+
+db:
+  mysql:
+    enabled: true
+    dsn: "root:secret@tcp(localhost:3306)/v5?charset=utf8mb4&parseTime=True&loc=Local"
+    idle: 10
+    open: 20
